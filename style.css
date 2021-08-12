@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(bg.jpg);
+  background-size: cover;
+}
+
+.kotak {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, .5);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, .5);
+}
+
+.kotak h2 {
+  color: #fff;
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+.kotak .inputKotak {
+  position: relative;
+}
+
+.kotak .inputKotak input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  margin: 10px 0;
+}
+
+.kotak .inputKotak label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.kotak .inputKotak input:focus~label,
+.kotak .inputKotak input:valid~label {
+  top: -23px;
+  font-size: 13px;
+  color: #03a9f4;
+  /* text-shadow: 0 1px 1px rgba(255, 255, 255, .5); */
+  left: 0;
+}
+
+.kotak button[type="submit"] {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #03a9f4;
+  padding: 7px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  /* border-radius: 3px; */
+}
